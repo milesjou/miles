@@ -1,18 +1,14 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
-    </head>
-
+<!DOCTYPE html >
+<html >
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+    <script type="text/javascript" language="javascript" src="js/bmi.js" charset="UTF-8"></script>
+</head>
 <body>
-
-    <form name="form1" method="post" action="bmi_process.php">
-        BMI計算<br/>
-        身高: <input type="text" name="height" size="30"/>cm<br/>
-        體重: <input type="weight" name="weight" size="30"/>kg<br/>
-        <input type="submit" value="送出計算">
-        <input type="reset" value="重設">
-    </form>
+    BMI計算器<br/>
+    身高：<input id="height" namem="height" type="text" />cm<br/>
+    體重：<input id="weight" namem="weight" type="text" />kg<br/>
+    <button onclick="bmi()">送出計算</button>
+    <output id="result"></output>
 </body>
-
 </html>
